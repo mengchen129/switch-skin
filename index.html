@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>switch-skin</title>
+    <link rel="stylesheet" id="themeLink">
+    <script>
+        var cacheStyle = localStorage.getItem('DISPLAY_STYLE');
+        if (cacheStyle) {
+            document.querySelector('#themeLink').href = 'dist/style' + cacheStyle + '.css';
+        }
+    </script>
+</head>
+<body>
+<div id="app"></div>
+<script src="/dist/build-main.js"></script>
+</body>
+</html>
